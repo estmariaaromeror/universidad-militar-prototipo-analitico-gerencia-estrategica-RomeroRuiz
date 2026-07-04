@@ -8,7 +8,7 @@
 
 | Pregunta analítica | Variables (nombres exactos) | Tipo (Outcome / Explic / Control / Segmento) | Cálculo / Transformación | Métrica (nombre + fórmula) | Periodo / Segmento | Patrón esperado (si cierta) | Condición refutación |
 |---|---|---|---|---|---|---|---|
-| ¿Los periodos de mayor presión operativa presentan una mayor ocurrencia de accidentes laborales en comparación con los periodos de menor presión operativa? | accidentes_laborales | Outcome | Agrupar registros por `turno_trabajo`; sumar `accidentes_laborales` por período; calcular promedio de `volumen_pedidos`, `horas_trabajadas` y `cantidad_personal_turno` para cada turno analizado. | **Tasa de accidentalidad operativa.**<br>`(accidentes_laborales / cantidad_personal_turno) × 100` | Mensual | ≤ 10% | **≥ 15%** |
+| ¿Los periodos de mayor presión operativa para los trabajadores presentan una mayor ocurrencia de accidentes laborales en comparación con los periodos de menor presión operativa? | accidentes_laborales | Outcome | Agrupar registros por `turno_trabajo`; sumar `accidentes_laborales` por período; calcular promedio de `volumen_pedidos`, `horas_trabajadas` y `cantidad_personal_turno` para cada turno analizado. | **Tasa de accidentalidad operativa.**<br>`(accidentes_laborales / cantidad_personal_turno) × 100` | Mensual | ≤ 10% | **≥ 15%** |
 |  | `turno_trabajo` | Segmento |  |  |  |  |  |
 |  | `cantidad_personal_turno` | Control |  |  |  |  |  |
 |  | `volumen_pedidos` | Explic |  |  |  |  |  |
